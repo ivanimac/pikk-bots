@@ -116,7 +116,7 @@ class BufferedAgent {
     // Spam guard: 3 mensajes idénticos = cooldown
     const spamScore = await checkSpam(msg, env);
     if (spamScore.blocked) {
-      return spamScore.reply;
+      return spamScore.reply ?? 'Mensaje bloqueado temporalmente.';
     }
 
     // Construir historial

@@ -31,6 +31,7 @@
     "@ai-sdk/openai": "latest",
     "@ai-sdk/xai": "latest",
     "@supabase/supabase-js": "latest",
+    "@tailwindcss/postcss": "^4.3.3",
     "@upstash/redis": "latest",
     "ai": "latest",
     "dotenv": "^17.4.2",
@@ -38,6 +39,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "tailwindcss": "^4.3.3",
     "zod": "latest"
   },
   "devDependencies": {
@@ -46,7 +48,7 @@
     "@types/react-dom": "latest",
     "supabase": "latest",
     "tsx": "latest",
-    "typescript": "latest",
+    "typescript": "^6.0.3",
     "vercel": "latest",
     "vitest": "latest"
   },

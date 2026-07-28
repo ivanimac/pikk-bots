@@ -1,12 +1,4 @@
 {
-  "buildCommand": "mkdir -p .vercel/output/static && cp public/index.html .vercel/output/static/ 2>/dev/null || echo '<h1>PIKK Bots</h1>' > .vercel/output/static/index.html",
-  "outputDirectory": ".vercel/output/static",
-  "installCommand": "pnpm install --frozen-lockfile",
-  "rewrites": [
-    { "source": "/webhooks/(.*)", "destination": "/api" },
-    { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/admin/(.*)", "destination": "/api" }
-  ],
   "crons": [
     {
       "path": "/api/cron/purge-messages",
