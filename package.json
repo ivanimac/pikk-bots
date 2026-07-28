@@ -33,6 +33,7 @@
     "@supabase/supabase-js": "latest",
     "@upstash/redis": "latest",
     "ai": "latest",
+    "dotenv": "^17.4.2",
     "hono": "latest",
     "next": "latest",
     "react": "latest",
