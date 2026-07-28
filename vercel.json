@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install",
+  "functions": {
+    "src/**/*.ts": {
+      "runtime": "nodejs22.x",
+      "maxDuration": 300
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/purge-messages",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/health-check",
+      "schedule": "0 * * * *"
+    }
+  ]
+}

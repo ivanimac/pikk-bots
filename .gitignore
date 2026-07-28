@@ -1,0 +1,6 @@
+pikk-bots/
+node_modules/
+.env
+.env.local
+dist/
+.bot-setup.json

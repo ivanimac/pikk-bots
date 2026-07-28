@@ -1,0 +1,66 @@
+{
+  "name": "pikkbot",
+  "version": "0.1.0",
+  "description": "PIKK Bots — Tu chatbot de IA para WhatsApp, Instagram y Telegram. Self-hosted en Vercel + Supabase.",
+  "type": "module",
+  "license": "MIT",
+  "author": "PIKK <hola@pikkweb.es>",
+  "repository": "github:ivanimac4826-ctrl/pikk-bots",
+  "bin": {
+    "pikkbot": "cli/bin/cli.js"
+  },
+  "files": [
+    "cli/bin/cli.js",
+    "skill/",
+    "src/",
+    "member/",
+    "supabase/"
+  ],
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "vercel --prod",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "kb:reindex": "tsx src/kb/reindex.ts",
+    "db:migrate": "supabase db push"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "latest",
+    "@ai-sdk/openai": "latest",
+    "@ai-sdk/xai": "latest",
+    "@supabase/supabase-js": "latest",
+    "@upstash/redis": "latest",
+    "ai": "latest",
+    "hono": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "supabase": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vercel": "latest",
+    "vitest": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "chatbot",
+    "whatsapp",
+    "telegram",
+    "instagram",
+    "ai",
+    "pikk",
+    "self-hosted",
+    "vercel",
+    "supabase"
+  ]
+}
