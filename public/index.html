@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PIKK Bots — Tu chatbot de IA self-hosted</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0A0A0F;color:#E0E0E0;font-family:system-ui,-apple-system,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center}
+.main{text-align:center;padding:48px 24px;max-width:600px}
+.logo{font-size:3rem;margin-bottom:8px}
+h1{color:#5CC9BE;font-size:2.2rem;margin:0 0 8px;font-weight:700}
+.tagline{color:#888;font-size:1.1rem;margin:0 0 32px;line-height:1.6}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:32px;text-align:left}
+.card{border:1px solid #5CC9BE22;border-radius:12px;padding:16px}
+.card h3{color:#5CC9BE;font-size:0.95rem;margin-bottom:4px}
+.card p{color:#777;font-size:0.85rem;line-height:1.4}
+.badge{display:inline-block;background:#5CC9BE22;color:#5CC9BE;padding:6px 16px;border-radius:20px;font-size:0.85rem;margin-bottom:24px}
+.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.links a{color:#5CC9BE;text-decoration:none;padding:8px 20px;border:1px solid #5CC9BE44;border-radius:8px;font-size:0.9rem;transition:background .2s}
+.links a:hover{background:#5CC9BE11}
+.copy{color:#555;font-size:0.8rem;margin-top:32px}
+</style>
+</head>
+<body>
+<div class="main">
+<div class="logo">&#x1f528;</div>
+<h1>PIKK Bots</h1>
+<p class="tagline">Tu chatbot de IA para WhatsApp, Instagram y Telegram.<br>Self-hosted en tu Vercel + Supabase. Open source.</p>
+<div class="badge">v0.1.0 · Online</div>
+<div class="grid">
+<div class="card"><h3>&#x1f4ac; Multicanal</h3><p>WhatsApp, Instagram, Messenger y Telegram desde un mismo cerebro.</p></div>
+<div class="card"><h3>&#x1f9e0; RAG</h3><p>Aprende de tus documentos con búsqueda vectorial (pgvector).</p></div>
+<div class="card"><h3>&#x1f4ca; Dashboard</h3><p>Conversaciones, leads, métricas. Todo en /admin.</p></div>
+<div class="card"><h3>&#x1f510; Tus datos</h3><p>En tu Supabase, con tus llaves. Sin telemetría.</p></div>
+</div>
+<div class="links">
+<a href="https://github.com/ivanimac/pikk-bots">GitHub</a>
+<a href="/admin">Dashboard</a>
+<a href="/api/health">API Health</a>
+</div>
+<p class="copy">MIT © PIKK · pikkweb.es</p>
+</div>
+</body>
+</html>
